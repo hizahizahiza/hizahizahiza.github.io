@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "メイリオ", "Hiragino Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../image/eruda.png");
+    background-repeat: repeat;
+    background-size: 25%;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 80%;
+    line-height: 1.8;
+}
+
+p2 {
+    font-size: 80%;
+    line-height: 1.8;
+    color: #6a6a6a;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 140%;
+}
+
+h2 {
+    font-size: 120%;
+    border-bottom: 1px dashed #327a73;
+    border-left: 10px solid #327a73;
+    padding-left: 7px;
+}
+
+footer {
+    font-size: 50%;
+    text-align: center;
+    background-color: #545454;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+article {
+    position: relative;
+    clear: both;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #ffffff;
+    color: #327a73;
+}
+
+
+header img {
+    float: left;
+}
+
+.dummy {
+    margin: 0;
+}
+
+.header-in {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-h1 {
+    color: #ffffff;
+    background: linear-gradient(to left, #01b0aa00, #01b0aa);
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+/* --- ナビゲーションメニュー --- */
+nav ul {
+    font-weight: bold;
+    text-align: right;
+    padding-top: 26px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-right: 1px solid #327a73;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #01b0aa;
+}
+
+nav ul a:hover {
+    color: #005350;
+}
+
+/* --- 一般のリスト（お知らせ等） --- */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.8;
+    font-size: 90%;
+}
+
+ul time {
+    border-radius: 10px;
+    background-color: #414141;
+    color: #ffffff;
+    font-size: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+/* --- おすすめシナリオページ用 --- */
+.point-list {
+    list-style-image: url(../image/star.png);
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.point-list a {
+    color: #01b0aa;
+    text-decoration: underline; 
+}
+
+.point-img {
+    box-shadow: 0px 0px 10px 3px #858585;
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.sentou {
+    clear: both;
+    text-align: right;
+}
+
+ol {
+    padding-left: 0;
+}
+
+ol li {
+    display: inline;
+    margin-right: 5px;
+    font-size: 80%;
+}
+
+.page {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* --- 冒険の足跡（ふせったーリンク） --- */
+.huse-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.huse-icon {
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+
+.huse-link {
+    text-decoration: underline;
+    color: #01b0aa;
+    margin: 0;
+}
+
+/* --- 立ち絵ホバーエリア --- */
+.tachiye-box {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 10px 3px #858585;
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+    overflow: hidden; 
+}
+
+.tachiye-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.tachiye-box .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tachiye-box:hover .hover {
+    opacity: 1;
+}
+
+
+/* --- index --- */
+.main-visual-container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-visual-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-visual-container .catch {
+    position: absolute;
+    top: 15%;  
+    left: 8%;  
+    
+    color: #ffffff; 
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); 
+    z-index: 10;
+}
+.main-visual-container .catch h1 {
+    margin: 0 0 10px 0;
+    font-size: 240%;
+}
+
+.main-visual-container .catch p {
+    margin: 0;
+    font-size: 110%;
+}
+
+/* お部屋 */
+.oheya-box {
+    position: relative;
+    display: block;      
+    max-width: 500px;    
+    margin: 20px auto; 
+}
+
+.oheya-box img {
+    width: 100%;
+    height: auto;          
+    display: block;
+    box-shadow: 0px 0px 10px 3px #858585; 
+    border-radius: 10px;                  
+}
+.oheya-box .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.oheya-box .normal {
+    animation: autoFadeFirst 8s infinite ease-in-out;
+}
+.oheya-box .hover {
+    animation: autoFadeSecond 8s infinite ease-in-out;
+}
+
+@keyframes autoFadeFirst {
+    0%, 35% { opacity: 1; }
+    60%, 85% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes autoFadeSecond {
+    0%, 35% { opacity: 0; }
+    60%, 85% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* 960px以下の場合 */
+@media(max-width:969px){
+    header img {
+        float: left;
+    }
+    nav ul {
+        text-align: left;
+        padding: 0;
+        margin-left: 10px;
+    }
+    article {
+        width: auto;
+    }
+    article img {
+        max-width: 100%;
+        height: auto;
+    }
+    .header-in {
+        width: auto;
+    }
+} 
+
+/* 600px以下の場合 */
+@media(max-width:600px){
+    nav li {
+        font-size: 75%;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    footer { 
+        font-size: 75%;
+    }
+    .point-img,
+    .tachiye-box {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    /* スマホ用のメインビジュアル文字潰れ対策 */
+    .main-visual-container .catch {
+        top: 8%;
+        left: 5%;
+    }
+    .main-visual-container .catch h1 {
+        font-size: 130%;
+        margin-bottom: 3px;
+    }
+    .main-visual-container .catch p {
+        font-size: 75%;
+    }
+}
+
+/*プリント出力*/
+@media print{
+    .catch{
+        color:#ffffff;
+        text-shadow: none;
+    }
+    footer{
+        color: #000000;
+    }
+}
